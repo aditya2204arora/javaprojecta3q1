@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                git 'https://github.com/aditya2204arora/javaprojecta3q1.git'
+                git url: 'https://github.com/aditya2204arora/javaprojecta3q1.git', branch: 'main'
                 sh 'mvn package'
             }
         }
